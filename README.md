@@ -1,2 +1,2 @@
 # dogs
-Para ver o projeto click [aqui.](https://https://dogs-ochre-nine.vercel.app//)
+Para ver o projeto click [aqui.](https://dogs-ochre-nine.vercel.app)
