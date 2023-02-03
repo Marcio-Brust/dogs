@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { UserContext } from "../../UserContext";
+import UseMedia from "../../Hooks/UseMedia";
 import { ReactComponent as MinhasFotos } from "../../Assets/feed.svg";
 import { ReactComponent as Estatisticas } from "../../Assets/estatisticas.svg";
 import { ReactComponent as AdicionaFoto } from "../../Assets/adicionar.svg";
 import { ReactComponent as Sair } from "../../Assets/sair.svg";
 import styles from "./UserHeaderNav.module.css";
-import UseMedia from "../../Hooks/UseMedia";
 
 const UserHeaderNav = () => {
   const { userLogout } = React.useContext(UserContext);
@@ -31,7 +31,7 @@ const UserHeaderNav = () => {
         ></button>
       )}
       <nav
-        className={`${!mobile ? styles.nav : styles.navMobile} ${
+        className={`${mobile ? styles.navMobile : styles.nav} ${
           mobileMenu && styles.navMobileActive
         }`}
       >
